@@ -17,6 +17,3 @@ class Accounts(): # create class
 
     def update_email (self, new_email):
         Accounts.email = new_email
-
-    def add_transaction(self, transaction):
-        self.transaction_history.append(transaction)
