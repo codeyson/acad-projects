@@ -44,6 +44,7 @@ print(Account2.email)
 print()
 
 # creating and Using ATM object
+print("------------------------------------NEW ACCOUNT-------------------------------------------------")
 ATM1 = ATM.ATM(serial_number = random.randrange(10**5, 10**6), account=Account1)
 ATM1.deposit(500)
 print(f"Current Balance: {ATM1.check_current_balance()}")
