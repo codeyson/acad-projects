@@ -53,13 +53,16 @@ ATM1.deposit(200)
 print(f"Current Balance: {ATM1.check_current_balance()}")
 ATM1.deposit(200)
 ATM1.deposit(200)
+print(f"Serial Number: {ATM1.serial_number}")
+
+print("------------------------------------NEW ACCOUNT-------------------------------------------------")
 
 ATM2 = ATM.ATM(serial_number = random.randrange(10**5, 10**6), account=Account2)
 ATM2.deposit(300)
 print(f"Current Balance: {ATM2.check_current_balance()}")
+print(f"Serial Number: {ATM2.serial_number}")
 
-print("Serial Number:")
-print(ATM1.serial_number)
 
 ATM1.view_transactionsummary()
+
 ATM2.view_transactionsummary()
